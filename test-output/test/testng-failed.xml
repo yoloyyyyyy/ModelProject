@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test]">
+  <test name="C:/Users/yolo/IdeaProjects/ModelProject/testcore(failed)">
+    <classes>
+      <class name="TestNGlearn2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+          <include name="testCase1"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- TestNGlearn2 -->
+    </classes>
+  </test> <!-- C:/Users/yolo/IdeaProjects/ModelProject/testcore(failed) -->
+</suite> <!-- Failed suite [test] -->

@@ -1,3 +1,5 @@
+package Util;
+
 import java.sql.*;
 
 
@@ -5,14 +7,14 @@ import java.sql.*;
  * Created by yolo on 2018/4/11.
  */
 public class MysqlConn {
-    public static final String url = "jdbc:mysql://192.168.199.112:3306";
+    public static final String url = "jdbc:mysql://192.168.199.112:3306/userorder?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+//  jdbc:mysql://192.168.199.112:3306
     public static final String driver = "com.mysql.jdbc.Driver";
     public static final String username = "root";
     public static final String password = "ezbuyisthebest";
-    
-    private Connection conn = null;
-    private PreparedStatement pst = null;
-    private Statement statement = null;
+
+    public Connection conn = null;
+    public PreparedStatement pst = null;
     
     public MysqlConn(String sql) throws SQLException {
             try {

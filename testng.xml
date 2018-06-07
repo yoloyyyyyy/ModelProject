@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="test">
-    <test verbose="2" preserve-order="true" name="C:/Users/yolo/IdeaProjects/ModelProject/testcore">
+
+    <test verbose="2" preserve-order="true" name="testsuite">
+        <parameter name="dbconfig" value="C:\\Users\\yolo\\IdeaProjects\\ModelProject\\testcore\\src\\main\\resources\\mysql.properties"/>
+        <parameter name="poolsize" value="10"/>
         <classes>
-            <class name="Test1">
-            </class>
+            <class name="TestParameterConn">
+            </class>     
         </classes>
     </test>
 </suite>

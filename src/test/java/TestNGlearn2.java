@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 /**
  * Created by yolo on 2018/4/11.
  */
-public class Test1 {
+public class TestNGlearn2 {
     @Test
     public void testCase1(){
         Assert.assertTrue(false);
@@ -13,11 +13,21 @@ public class Test1 {
         Reporter.log("测试1失败");
     }
     
-    @Test
+    @Test(enabled = true)
     public void testCase2(){
         Assert.assertTrue(true);
         System.out.println("case2");
         Reporter.log("测试2通过");
+    }
+    
+    @Test
+    public void testCase3(){
+        for (int j= 1 ;j<10;j++){
+            for(int k=1;k<=j;k++){
+                System.out.print(j+"*"+k+"="+j*k+"  ");
+            }
+            System.out.println("");
+        }
     }
     
     @BeforeMethod

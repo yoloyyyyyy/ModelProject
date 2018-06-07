@@ -40,10 +40,11 @@ public class ExcelData {
     /**
      * 获得excel表中的数据 
      */
-    public Object[][] getExcelData() throws BiffException, IOException {
+    public HashMap<String,String>[][] getExcelData() throws BiffException, IOException {
 
         // 创建输入流  
         File file = new File(getPath());
+        System.out.println(getPath());
         InputStream stream = new FileInputStream(file);
         workbook = Workbook.getWorkbook(stream);
         sheet = workbook.getSheet(caseName);
