@@ -1,7 +1,11 @@
 import jxl.read.biff.BiffException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by yolo on 2018/4/8.
@@ -16,7 +20,7 @@ public class SeleniumTest {
         HashMap<String,String>[][] arr = excelData.getExcelData();
         System.out.println(arr[0][0]);
         
-/*        for (int m = 0; m < arr.length; m++) {//控制行数
+        for (int m = 0; m < arr.length; m++) {//控制行数
             WebDriver webDriver = new ChromeDriver();
             LoginPage loginPage = new LoginPage(webDriver);
             webDriver.get(url);
@@ -27,7 +31,7 @@ public class SeleniumTest {
             loginPage.login(map.get("username"),map.get("password"));
             Thread.sleep(5000);
             webDriver.quit();
-        }*/
+        }
 
 
     }
